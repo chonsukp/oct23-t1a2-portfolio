@@ -1,1 +1,32 @@
-/*# sourceMappingURL=style.css.map */
+.home {
+  font-size: 50px;
+}
+.home .home-logo {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(-45deg, #ffffff, #c0c9d5, #ffffff, #c0c9d5);
+  background-size: 400% 400%;
+  background-attachment: fixed;
+  height: auto;
+  animation: color 7s ease infinite;
+}
+@keyframes color {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  text-align: center;
+  padding: 16px;
+  font-family: "Poppins", sans-serif;
+}/*# sourceMappingURL=style.css.map */
