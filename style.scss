@@ -1,4 +1,6 @@
-
+@import "./styles/defaults//breakpoints";
+@import "./styles/components/header";
+@import "./styles/components/footer";
 
 body {
     display: flex;
@@ -26,51 +28,6 @@ body {
     }
 }
 
-header {
-    text-align: center;
-    padding: 16px;
-    font-family: 'Poppins', sans-serif;
-
-    .home {
-        font-size: 50px;
-        margin-bottom: 48px;
-        
-        .home-logo {
-            text-decoration: none;
-        }
-    
-        #logo {
-            font-weight: bold;
-        }
-        
-        #logo-appear {
-            position: relative;
-            color: transparent;
-        }
-
-        #logo-appear::before {
-            content: "YROS";
-            position: absolute;
-            color: black;
-            width: 0%;
-            overflow: hidden;
-            transition: 1s ease-in-out;
-        }
-        
-        #logo-appear:hover::before {
-            width: 100%;
-        }
-    }
-
-    #nav-items {
-        display: flex;
-        justify-content: space-around;
-        font-size: 16px;
-        
-        
-    }
-}
-
 a {
     text-decoration: none;
     color: black;
@@ -80,26 +37,6 @@ a:hover {
     text-underline-offset: 0.7rem;
 }
 
-footer {
+main {
     font-family: 'Poppins', sans-serif;
-    text-align: center;
-    padding: 16px;
-
-    .social-media-items {
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 36px;
-
-        a {
-            i {
-                font-size: 20px;
-            }
-        }
-    }
-    
-    .copyright {
-        font-weight: 300;
-        font-size: 12px;
-    }
 }
-

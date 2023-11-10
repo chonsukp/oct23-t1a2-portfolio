@@ -1,3 +1,87 @@
+header {
+  text-align: center;
+  padding: 16px;
+  font-family: "Poppins", sans-serif;
+}
+header .home {
+  font-size: 44px;
+  font-weight: 700;
+}
+@media screen and (max-width: 1023px) {
+  header .home {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  header .home #logo-appear {
+    display: none;
+  }
+}
+header .home .home-logo {
+  text-decoration: none;
+}
+header .home #logo-appear {
+  position: relative;
+  color: transparent;
+}
+header .home #logo-appear::before {
+  content: "YROS";
+  position: absolute;
+  color: black;
+  width: 0%;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+}
+header .home #logo-appear:hover::before {
+  width: 100%;
+}
+header #nav-items {
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 1023px) {
+  header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  header .home .home-logo {
+    margin-bottom: 0;
+  }
+  header #nav-items {
+    width: 50%;
+    margin-bottom: 24px;
+  }
+}
+footer {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 16px;
+}
+footer .social-media-items {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 36px;
+}
+footer .social-media-items a i {
+  font-size: 20px;
+}
+footer .copyright {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 1023px) {
+  footer .social-media-items {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 body {
   display: flex;
   flex-direction: column;
@@ -22,42 +106,6 @@ body {
   }
 }
 
-header {
-  text-align: center;
-  padding: 16px;
-  font-family: "Poppins", sans-serif;
-}
-header .home {
-  font-size: 50px;
-  margin-bottom: 48px;
-}
-header .home .home-logo {
-  text-decoration: none;
-}
-header .home #logo {
-  font-weight: bold;
-}
-header .home #logo-appear {
-  position: relative;
-  color: transparent;
-}
-header .home #logo-appear::before {
-  content: "YROS";
-  position: absolute;
-  color: black;
-  width: 0%;
-  overflow: hidden;
-  transition: 1s ease-in-out;
-}
-header .home #logo-appear:hover::before {
-  width: 100%;
-}
-header #nav-items {
-  display: flex;
-  justify-content: space-around;
-  font-size: 16px;
-}
-
 a {
   text-decoration: none;
   color: black;
@@ -68,20 +116,6 @@ a:hover {
   text-underline-offset: 0.7rem;
 }
 
-footer {
+main {
   font-family: "Poppins", sans-serif;
-  text-align: center;
-  padding: 16px;
-}
-footer .social-media-items {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 36px;
-}
-footer .social-media-items a i {
-  font-size: 20px;
-}
-footer .copyright {
-  font-weight: 300;
-  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

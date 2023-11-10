@@ -1,0 +1,70 @@
+@import "../defaults//breakpoints";
+
+header {
+    text-align: center;
+    padding: 16px;
+    font-family: 'Poppins', sans-serif;
+
+    .home {
+        font-size: 44px;
+        font-weight: 700;
+
+        @media screen and (max-width: $medium) {
+            margin-top: 24px;
+            margin-bottom: 24px;
+
+            #logo-appear {
+                display: none;
+            }
+        }
+        
+        .home-logo {
+            text-decoration: none;
+        }
+        
+        #logo-appear {
+            position: relative;
+            color: transparent;
+        }
+
+        #logo-appear::before {
+            content: "YROS";
+            position: absolute;
+            color: black;
+            width: 0%;
+            overflow: hidden;
+            transition: 1s ease-in-out;
+        }
+        
+        #logo-appear:hover::before {
+            width: 100%;
+        }
+    }
+
+    #nav-items {
+        display: flex;
+        justify-content: space-around;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+@media screen and (min-width: $medium) {
+    header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-left: 30px;
+        margin-right: 30px;
+
+        .home {
+            .home-logo {
+                margin-bottom: 0;
+            }
+        }
+
+        #nav-items {
+            width: 50%;
+            margin-bottom: 24px;
+        }
+    }
+}
