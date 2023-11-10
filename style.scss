@@ -1,10 +1,4 @@
-.home {
-    font-size: 50px;
-    
-    .home-logo {
-        text-decoration: none;
-    }
-}
+
 
 body {
     margin: 0;
@@ -32,8 +26,53 @@ header {
     padding: 16px;
     font-family: 'Poppins', sans-serif;
 
+    .home {
+        font-size: 50px;
+        margin-bottom: 48px;
+        
+        .home-logo {
+            text-decoration: none;
+        }
+    
+        #logo {
+            font-weight: bold;
+        }
+        
+        #logo-appear {
+            position: relative;
+            color: transparent;
+        }
+
+        #logo-appear::before {
+            content: "YROS";
+            position: absolute;
+            color: black;
+            width: 0%;
+            overflow: hidden;
+            transition: 1s ease-in-out;
+        }
+        
+        #logo-appear:hover::before {
+            width: 100%;
+        }
+    }
+
     #nav-items {
-        // text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+        font-size: 16px;
+        
+        
     }
     
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
 }
