@@ -118,4 +118,44 @@ a:hover {
 
 main {
   font-family: "Poppins", sans-serif;
+  padding: 16px;
+  margin-left: 4vh;
+  margin-right: 4vh;
+}
+main .section-1 {
+  margin-top: 0;
+  font-size: 4rem;
+  font-weight: 500;
+}
+main .section-1 .hero-message {
+  margin-top: 0;
+}
+main .section-1 .hero-message-type {
+  border-right: 4px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(6), cursor 0.4s step-end infinite alternate;
+}
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+main .section-2 .name {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+main .section-2 .description {
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 0;
+}
+main .section-2 .intro {
+  font-weight: 300;
 }/*# sourceMappingURL=style.css.map */

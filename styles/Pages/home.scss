@@ -1,0 +1,57 @@
+@import "../../style";
+
+main {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    padding: 16px;
+    margin-left: 4vh;
+    margin-right: 4vh;
+    // display: inline-block;
+    
+    .section-1 {
+        margin-top: 0;
+        font-size: 4rem;
+        font-weight: 500;
+        // display: inline-block;
+        
+        .hero-message {
+            margin-top: 0;
+        }
+        
+        .hero-message-type {
+            border-right: 4px solid;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 2s steps(6), cursor .4s step-end infinite alternate;
+        }
+
+        @keyframes cursor {
+            50% {border-color: transparent}
+        }
+
+        @keyframes typing {
+            from {width:0}
+        }
+    }
+
+    .section-2 {
+
+       .name {
+        font-size: 2rem;
+        margin-bottom: 0;
+       }
+
+       .description {
+        font-weight: 300;
+        font-style: italic;
+        margin-top: 0;
+       }
+
+       .intro {
+        font-weight: 300;
+       }
+    }
+}
