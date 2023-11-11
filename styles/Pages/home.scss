@@ -1,26 +1,27 @@
 @import "../../style";
 
+
+
 main {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-around;
+    display: inline;
     font-family: 'Poppins', sans-serif;
     padding: 16px;
     margin-left: 4vh;
     margin-right: 4vh;
-    // display: inline-block;
+
+    @media screen and (max-width: $medium){
+        text-align: center;
+    }
     
-    .section-1 {
-        margin-top: 0;
+    .hero-text {
         font-size: 4rem;
         font-weight: 500;
-        // display: inline-block;
         
-        .hero-message {
+        .hero-text-static {
             margin-top: 0;
         }
         
-        .hero-message-type {
+        .hero-text-type {
             border-right: 4px solid;
             width: 100%;
             white-space: nowrap;
@@ -37,21 +38,61 @@ main {
         }
     }
 
-    .section-2 {
+    .hero-image {
+        margin-left: auto;
+        margin-right: auto;
+        height: 20%;
+        width: 20%;
+        border-radius: 32px;
+    }
 
-       .name {
-        font-size: 2rem;
+}
+
+.hero-text {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.brief-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 0;
         margin-bottom: 0;
-       }
-
-       .description {
+        font-weight: 500;
+    }
+    
+    h3 {
         font-weight: 300;
+        font-size: 1em;
         font-style: italic;
         margin-top: 0;
-       }
-
-       .intro {
-        font-weight: 300;
-       }
     }
+    
+    h4 {
+        font-weight: 300;
+        margin-top: 0;
+    }
+}
+
+
+@media screen and (min-width: $medium){
+    main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    }
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btn-lmam {
+    margin-bottom: 48px;
 }

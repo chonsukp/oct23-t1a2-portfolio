@@ -1,1 +1,8 @@
-$medium: 1023px;
+// Typical Device Breakpoints
+
+$small: 600px;
+$medium: 768px;
+$large: 992px;
+$xlarge: 1200;
+
+// Always design for mobile first before other devices. This will make the page display faster on smaller devices. 
