@@ -194,6 +194,7 @@ main form .form-elements .form-input {
   outline: none;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+  opacity: 0.8;
 }
 main form .btn-submit {
   display: flex;
