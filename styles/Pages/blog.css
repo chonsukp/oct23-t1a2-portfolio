@@ -205,6 +205,9 @@ main .hero-text .hero-text-type {
 main .container-blog {
   display: inline-block;
 }
+main .container-blog a {
+  text-decoration: none;
+}
 main .container-blog .blog {
   display: inline-block;
   height: 300px;
