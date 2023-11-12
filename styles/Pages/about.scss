@@ -1,1 +1,124 @@
 @import "../../style";
+
+main {
+    font-family: 'Poppins', sans-serif;
+    padding: 16px;
+    margin-left: 4vh;
+    margin-right: 4vh;
+    column-gap: 100px;
+
+    @media screen and (max-width: $medium){
+        text-align: center;
+    }
+    
+    .hero-text {
+        font-size: 4rem;
+        font-weight: 500;
+        
+        .hero-text-static {
+            margin-top: 0;
+        }
+        
+        .hero-text-type {
+            border-right: 4px solid;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 2s steps(6), cursor .4s step-end infinite alternate;
+        }
+
+        @keyframes cursor {
+            50% {border-color: transparent}
+        }
+
+        @keyframes typing {
+            from {width:0}
+        }
+    }
+
+    .hero-image {
+        margin-left: auto;
+        margin-right: auto;
+        height: 28%;
+        width: 28%;
+        border-radius: 32px;
+    }
+
+}
+
+.hero-text {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.brief-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 500;
+    }
+    
+    h3 {
+        font-weight: 300;
+        font-size: .8em;
+        font-style: italic;
+        margin-top: 0;
+    }
+    
+    h4 {
+        font-weight: 300;
+        margin-top: 0;
+    }
+}
+
+
+@media screen and (min-width: $medium){
+    main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btn-cv {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 48px;
+    background-color: transparent;
+    border-radius: 16px;
+    border-style: dashed;
+    opacity: .5;
+    transition: ease-in-out;
+    transition-duration: 0.4s;
+
+}
+
+.btn-cv:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: translateX(12px);
+    transition-duration: 0.4s;
+}
+
+.about-me-image {
+    margin-left: auto;
+    margin-right: 0;
+    height: 28%;
+    width: 28%;
+    border-radius: 32px;
+}
