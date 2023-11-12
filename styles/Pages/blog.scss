@@ -2,7 +2,6 @@
 
 main {
     font-family: 'Poppins', sans-serif;
-    padding: 16px;
     margin-left: 4vh;
     margin-right: 4vh;
     column-gap: 100px;
@@ -44,15 +43,19 @@ main {
 
         .blog {
             display: inline-block;
-            height: 230px;
-            width: 200px;
-            border-radius: 10px;
-            padding: 15px 25px;
+            height: 300px;
+            width: 300px;
+            border-radius: 12px;
+            padding: 16px 16px;
             box-sizing: border-box;
             cursor: pointer;
-            margin: 10px 15px;
+            margin: 16px 16px;
             background-position: center;
             background-size: cover;
+            transform: 0.5;
+            transition: ease-in-out;
+            transition-duration: 0.4s;
+            opacity: 1;
         }
     
         .blog1 {
@@ -74,9 +77,27 @@ main {
             background-image: url(../../images/blog6.JPG);
         }
         
-        h2 {
+        h5 {
+            text-align: start;
             color: white;
+            font-size: 20px;
             font-weight: 300;
+            text-shadow: 0 0 8px black;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        h6 {
+            text-align: start;
+            color: white;
+            text-shadow: 0 0 8px black;
+        }
+
+        .blog:hover {
+            transform: translateY(-10px);
+            transition-duration: 0.4s;
+            box-shadow: 4px 4px 16px grey;
+            opacity: .8;
         }
     }
 }

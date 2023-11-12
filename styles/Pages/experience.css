@@ -161,4 +161,15 @@ a {
 
 a:hover {
   text-decoration: line-through;
+}
+
+i {
+  font-size: 70px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }/*# sourceMappingURL=experience.css.map */
