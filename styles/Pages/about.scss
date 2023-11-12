@@ -36,14 +36,13 @@ main {
         }
     }
 
-    .hero-image {
+    .about-me-image {
         margin-left: auto;
-        margin-right: auto;
+        margin-right: 0;
         height: 28%;
         width: 28%;
         border-radius: 32px;
     }
-
 }
 
 .hero-text {
@@ -115,10 +114,3 @@ main {
     transition-duration: 0.4s;
 }
 
-.about-me-image {
-    margin-left: auto;
-    margin-right: 0;
-    height: 28%;
-    width: 28%;
-    border-radius: 32px;
-}

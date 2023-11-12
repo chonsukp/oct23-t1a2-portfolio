@@ -200,9 +200,9 @@ main .hero-text .hero-text-type {
     width: 0;
   }
 }
-main .hero-image {
+main .about-me-image {
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 0;
   height: 28%;
   width: 28%;
   border-radius: 32px;
@@ -269,12 +269,4 @@ main .hero-image {
   cursor: pointer;
   transform: translateX(12px);
   transition-duration: 0.4s;
-}
-
-.about-me-image {
-  margin-left: auto;
-  margin-right: 0;
-  height: 28%;
-  width: 28%;
-  border-radius: 32px;
 }/*# sourceMappingURL=about.css.map */
