@@ -46,7 +46,47 @@ header {
         justify-content: space-around;
         font-size: 16px;
         font-weight: 300;
+
+        #about {
+            transition: ease-in-out;
+            transition-duration: 0.4s;
+        }
+        #xp {
+            transition: ease-in-out;
+            transition-duration: 0.4s;
+        }
+        #blog {
+            transition: ease-in-out;
+            transition-duration: 0.4s;
+        }
+        #contact {
+            transition: ease-in-out;
+            transition-duration: 0.4s;
+        }
+        #about:hover {
+            opacity: 1;
+            transform: translateY(8px);
+            transition-duration: 0.4s;
+        }
+        #xp:hover {
+            opacity: 1;
+            transform: translateY(8px);
+            transition-duration: 0.4s;
+        }
+        #blog:hover {
+            opacity: 1;
+            transform: translateY(8px);
+            transition-duration: 0.4s;
+        }
+        #contact:hover {
+            opacity: 1;
+            transform: translateY(8px);
+            transition-duration: 0.4s;
+        }
+        
+
     }
+
 }
 @media screen and (min-width: $medium) {
     header {

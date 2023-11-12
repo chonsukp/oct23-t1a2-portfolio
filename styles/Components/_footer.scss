@@ -20,6 +20,7 @@ footer {
     .copyright {
         font-weight: 300;
         font-size: 12px;
+        opacity: .8;
     }
 }
 
@@ -29,6 +30,21 @@ footer {
             width: 50%;
             margin-left: auto;
             margin-right: auto;
+            
         }
+        
+        
     }
 }
+
+i {
+    transition: ease-in-out;
+    transition-duration: 0.4s;
+}
+
+i:hover {
+        opacity: 1;
+        // cursor: pointer;
+        transform: translateY(-12px);
+        transition-duration: 0.4s;
+    }
