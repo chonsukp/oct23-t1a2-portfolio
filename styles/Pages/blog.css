@@ -130,6 +130,10 @@ i:hover {
   transition-duration: 0.4s;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -204,6 +208,7 @@ main .hero-text .hero-text-type {
 }
 main .container-blog {
   display: inline-block;
+  margin-bottom: 48px;
 }
 main .container-blog a {
   text-decoration: none;

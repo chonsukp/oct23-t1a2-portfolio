@@ -2,6 +2,10 @@
 @import "./styles/components/header";
 @import "./styles/components/footer";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-direction: column;

@@ -130,6 +130,10 @@ i:hover {
   transition-duration: 0.4s;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -205,6 +209,7 @@ main .hero-image {
   height: 28%;
   width: 28%;
   border-radius: 32px;
+  box-shadow: 8px 8px 12px 0 yellow;
 }
 
 .hero-text {
