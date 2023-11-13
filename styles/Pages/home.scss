@@ -10,28 +10,21 @@ main {
         text-align: center;
     }
     
-    .hero-text {
+    // Typing animation
+    .heading {
         font-size: 4rem;
         font-weight: 500;
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0;
         
-        .hero-text-static {
-            margin-top: 0;
-        }
-        
-        .hero-text-type {
+        .heading-animation {
             border-right: 4px solid;
-            width: 100%;
-            white-space: nowrap;
-            overflow: hidden;
             animation: typing 2s steps(6), cursor .4s step-end infinite alternate;
         }
 
         @keyframes cursor {
             50% {border-color: transparent}
-        }
-
-        @keyframes typing {
-            from {width:0}
         }
     }
 
@@ -51,7 +44,7 @@ main {
     margin-bottom: 16px;
 }
 
-.brief-info {
+.body-text {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
