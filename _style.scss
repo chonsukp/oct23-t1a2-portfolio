@@ -40,5 +40,25 @@ a:hover {
     text-decoration: line-through;
 }
 
+// Button styling
+button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 48px;
+    background-color: transparent;
+    border-radius: 16px;
+    border-style: dashed;
+    opacity: .5;
+    transition: ease-in-out;
+    transition-duration: 0.4s;
 
+}
+// Button styling when hover
+button:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: translateX(12px);
+    transition-duration: 0.4s;
+}
 

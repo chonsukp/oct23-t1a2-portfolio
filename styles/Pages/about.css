@@ -167,6 +167,26 @@ a:hover {
   text-decoration: line-through;
 }
 
+button {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 48px;
+  background-color: transparent;
+  border-radius: 16px;
+  border-style: dashed;
+  opacity: 0.5;
+  transition: ease-in-out;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: translateX(12px);
+  transition-duration: 0.4s;
+}
+
 main {
   font-family: "Poppins", sans-serif;
   margin-left: 4vh;
@@ -253,24 +273,4 @@ main .about-me-image {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-
-.btn-cv {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 300;
-  margin-bottom: 48px;
-  background-color: transparent;
-  border-radius: 16px;
-  border-style: dashed;
-  opacity: 0.5;
-  transition: ease-in-out;
-  transition-duration: 0.4s;
-}
-
-.btn-cv:hover {
-  opacity: 1;
-  cursor: pointer;
-  transform: translateX(12px);
-  transition-duration: 0.4s;
 }/*# sourceMappingURL=about.css.map */
