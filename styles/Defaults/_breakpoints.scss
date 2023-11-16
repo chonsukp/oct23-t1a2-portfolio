@@ -1,8 +1,13 @@
-// Typical Device Breakpoints
+// Typical Device Breakpoints:
 
+// Small devices (portrait tablets and large phones, 600px and up).
 $small: 600px;
+
+// Medium devices (landscape tablets, 768px and up).
 $medium: 768px;
+
+// Large devices (laptops/desktops, 992px and up).
 $large: 992px;
-$xlarge: 1200;
 
 // Always design for mobile first before other devices. This will make the page display faster on smaller devices. 
+
