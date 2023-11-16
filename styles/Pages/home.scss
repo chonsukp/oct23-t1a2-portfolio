@@ -5,11 +5,10 @@ main {
     margin-left: 8vh;
     margin-right: 8vh;
     column-gap: 100px;
-    margin-bottom: 36px;
     
     .heading {
         font-size: 58px;
-        font-weight: 500;
+        font-weight: bold;
         display: inline-block;
         margin-top: 0;
         margin-bottom: 0;
@@ -40,9 +39,9 @@ main {
         }
         
         h3 {
+            font-style: italic;
             font-size: .8em;
             font-weight: 300;
-            font-style: italic;
             margin-top: 0;
         }
         
@@ -58,37 +57,46 @@ main {
         box-shadow: 8px 8px 12px 0 yellow;
     }
 
-    // media query for extra small devices to have everyting centered.
+    // This media query is for extra small devices to have everyting centered. Image radius
     @media only screen and (max-width: $small){
         text-align: center;
 
+        .heading {
+            font-size: 2.5rem;
+        }
+
         .hero-image {
-            height: 20%;
-            width: 20%;
+            height: 50%;
+            width: 50%;
+            border-radius: 100px;
+            margin-bottom: 36px;
         }
     }
-
+    
     // media query for small devices 
     @media only screen and (min-width: $small){
         text-align: center;
+        
+        .heading {
+            font-size: 2.5rem;
+        }
 
         .hero-image {
-            height: 40%;
-            width: 40%;
+            height: 30%;
+            width: 30%;
         }
     }
     // Media query for large devices to have text align left and hero image on the right.
     @media only screen and (min-width: $large){
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        text-align: left;
         margin-left: 16vh;
         margin-right: 16vh;
-        text-align: left;
 
         .hero-image {
-            height: 80%;
-            width: 80%;
+            height: 25%;
+            width: 25%;
         }
     }
 }

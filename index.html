@@ -6,7 +6,7 @@
     <title>Chonny's Portfolio</title>
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="./styles/pages/home.css"/>
-    <!-- Favicon -->
+    <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico"/>
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,14 +19,14 @@
 
     <!-- HEADER -->
     <header>
-        <!-- Logo -->
+        <!-- Logo Component - this is the return home link element. It includes a separate span id animation styling -->
         <div class="home">
             <a class="home-logo" href="./index.html">
                 <span id="logo">.C    
                 <span id="logo-appear">YROS</span>
             </a>
         </div>
-        <!-- Navigation Bar -->
+        <!-- Navigation Bar Component - these elements are used to navigate through pages of the website -->
         <nav id="nav-items">
             <a id="about" href="./pages/about.html">About</a>
             <a id="xp" href="./pages/experience.html">Experience</a>
@@ -37,35 +37,29 @@
 
     <!-- MAIN CONTENT -->
     <main>
-        <!--  Section 1 - Text -->
+        <!--  Main Section Component - thes elements are used for typographic hierarchy styling such as heading, subheading, caption and body texts. It also includes a button element that linked to the About Page -->
         <section>
-            <!-- Heading -->
             <h1 class="heading">
                 <p class="heading-animation">Hello, World!</p>
             </h1>
-            <!-- Body text -->
             <div class="body-text">
                 <h2>Chonny Sukpranee</h2>
-                <h3>emerging full-stack web developer</h3>
+                <h3>emerging junior full-stack web developer</h3>
                 <h4>
                     <p>Hi! My name is Chonny Lorem ipsum dolor sit, amet consectetur adit. Obcaecatime impedit quibusdam optio doloremque ratcabo perferendis dolorem iusto impedit expedita ea quo quis ipsam ipsa?.</p>
                 </h4>
             </div>
-            <!-- Button linked to About page -->
             <a href="./pages/about.html">
                 <button class="btn-more-about-me">More about me <span>&#128075;&#127996;</span></button>
             </a>
         </section>
-
-        <!-- Section 2 - Hero Image -->
-        <section>
-            <img class="hero-image" src="./images/hero.jpg" alt="Protrait photo of Chonny"/>
-        </section>
+        <!-- this div is the hero image of the page separated from the main section -->
+        <img class="hero-image" src="./images/hero.jpg" alt="Protrait photo of Chonny"/>
     </main>
 
     <!-- FOOTER -->
     <Footer>
-        <!-- Social media icons -->
+        <!-- Footer Component - these icon elements are social media links used as an alternative contacting method -->
         <div class="social-media-items">
             <a href="https://www.linkedin.com/in/chonsukp" target="_blank">
                 <i class="fa-brands fa-linkedin-in"></i>
@@ -77,7 +71,6 @@
                 <i class="fa-brands fa-instagram"></i>
             </a>
         </div>
-        <!-- Copyright -->
         <div class="copyright">
             <span>&#169 CYROS 2023 -</span>
             <span>CHONNY SUKPRANEE -</span>
