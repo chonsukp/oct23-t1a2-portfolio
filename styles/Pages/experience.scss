@@ -81,7 +81,7 @@ main {
         }
     }
 
-    // Media query for large devices to have text align left and hero image on the right.
+    // This media query for large devices to have text align center to the left and the icons on the right.
     @media only screen and (min-width: $large){
         display: flex;
         justify-content: space-around;

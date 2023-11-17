@@ -188,11 +188,47 @@ i:hover {
 
 main {
   font-family: "Poppins", sans-serif;
-  margin-left: 4vh;
-  margin-right: 4vh;
-  -moz-column-gap: 100px;
-       column-gap: 100px;
+  margin-left: 8vh;
+  margin-right: 8vh;
   text-align: center;
+}
+main .heading {
+  font-size: 58px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+main .heading .heading-animation {
+  border-right: 4px solid;
+  animation: typing 2s, cursor 0.4s step-end infinite alternate;
+}
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+main .body-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 18px;
+}
+main .body-text h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+main .body-text h3 {
+  font-style: italic;
+  font-size: 0.8em;
+  font-weight: 300;
+  margin-top: 0;
+}
+main .body-text h4 {
+  font-weight: 300;
+  margin-top: 0;
 }
 main form {
   display: flex;
@@ -224,69 +260,29 @@ main form .form-elements .form-input#form-textarea {
 main form .form-elements .form-input:focus {
   box-shadow: 0 0 4px grey;
 }
-main form .btn-submit {
-  display: flex;
-  justify-content: center;
-}
-main .hero-text {
-  font-size: 4rem;
-  font-weight: 500;
+main .btn-submit {
+  text-align: center;
   margin-top: 16px;
-  margin-bottom: 16px;
-}
-main .hero-text .hero-text-static {
-  margin-top: 0;
-}
-main .hero-text .hero-text-type {
-  border-right: 4px solid;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 2s steps(6), cursor 0.4s step-end infinite alternate;
-}
-@keyframes cursor {
-  50% {
-    border-color: transparent;
-  }
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-main .brief-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-main .brief-info h2 {
-  font-size: 1.5rem;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 500;
-}
-main .brief-info h3 {
-  font-weight: 300;
-  font-size: 0.8em;
-  font-style: italic;
-  margin-top: 0;
-}
-main .brief-info h4 {
-  font-weight: 300;
-  margin-top: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   main {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
+    justify-content: space-between;
     padding-left: 100px;
     padding-right: 100px;
   }
   main form {
-    text-align: left;
     width: 40%;
+    padding-left: 4vw;
+  }
+  main .heading {
+    font-size: 3rem;
+  }
+  main .heading-animation {
+    margin-top: 0;
+  }
+  main .body-text {
+    font-size: 1em;
   }
 }/*# sourceMappingURL=contact.css.map */

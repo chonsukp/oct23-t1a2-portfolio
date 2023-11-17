@@ -184,4 +184,91 @@ i {
 i:hover {
   transform: translateY(-8px);
   transition-duration: 0.4s;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  margin-left: 8vh;
+  margin-right: 8vh;
+  margin-top: 36px;
+  text-align: center;
+}
+main .heading {
+  font-size: 48px;
+}
+main .body-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 18px;
+}
+main .body-text h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+main .body-text h3 {
+  font-style: italic;
+  font-size: 0.8em;
+  font-weight: 300;
+  margin-top: 0;
+}
+main .body-text h4 {
+  font-weight: 300;
+  margin-top: 0;
+}
+main .hero-image {
+  border-radius: 16px;
+  box-shadow: 8px 8px 12px 0 grey;
+}
+@media only screen and (max-width: 600px) {
+  main {
+    text-align: center;
+  }
+  main .heading {
+    font-size: 2.5rem;
+  }
+  main .hero-image {
+    height: 60%;
+    width: 60%;
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  main {
+    text-align: center;
+  }
+  main .heading {
+    font-size: 3rem;
+  }
+  main .hero-image {
+    height: 65%;
+    width: 65%;
+    margin-top: 36px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  main {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 16vh;
+    margin-right: 16vh;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+  main .body-text {
+    font-size: 1em;
+  }
+  main .container-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+  }
+  main .container-image .hero-image {
+    height: 70%;
+    width: 70%;
+  }
 }/*# sourceMappingURL=blog-post.css.map */

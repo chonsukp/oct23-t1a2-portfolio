@@ -5,53 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chonny's Portfolio</title>
     <!-- STYLESHEET -->
-    <link rel="stylesheet" href="../../styles/Pages/blog-post.css"/>
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico"/>
+    <link rel="stylesheet" href="../../styles/pages/blog-post.css"/>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico"/>
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <!-- DEVICON TECH STACK ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-          
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
-        <!-- Logo -->
+        <!-- Logo Component - this is the return home link element. It includes a separate span id animation styling. -->
         <div class="home">
             <a class="home-logo" href="../../index.html">
-                <span id="logo">
-                    <span>.C</span>
-                </span>    
-                <span id="logo-appear">
-                    <span>YROS</span>
-                </span>
-             </a>
+                <span id="logo">.C    
+                <span id="logo-appear">YROS</span>
+            </a>
         </div>
-        <!-- Navigation Bar -->
+        <!-- Navigation Bar Component - these elements are used to navigate through pages of the website. -->
         <nav id="nav-items">
-            <a href="../about.html">About</a>
-            <a href="../experience.html">Experience</a>
-            <a href="../blog.html">Blog</a>
-            <a href="../contact.html">Contact</a>
+            <a id="about" href="../about.html">About</a>
+            <a id="xp" href="../experience.html">Experience</a>
+            <a id="blog" href="../blog.html">Blog</a>
+            <a id="contact" href="../contact.html">Contact</a>
         </nav>
     </header>
-    <!-- END OF HEADER -->
+    
     <!-- MAIN SECTION -->
     <main>
-       
-
+        <!--  Main Section Component - these elements are used for typographic hierarchy styling such as heading, subheading, caption and body texts. It also includes a button that returns to Blog Page -->
+        <div class="container-image">
+            <img class="hero-image" src="../../images/blog6.jpg"/>
+        </div> 
+       <section id="container-main-section">
+        <h1 class="heading">
+            <p>INSERT BLOG 6 TITLE HERE.</p>
+        </h1>
+        <article class="body-text">
+            <h2>By Chonny Sukpranee</h2>
+            <h3>Published: 17 November 2023</h3>
+            <h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, assumenda aspernatur. Veniam porro cum reiciendis laborum, tempore quisquam illum, ipsa nam itaque voluptatibus pariatur voluptate perspiciatis non facere eius assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic unde modi earum id rerum? Illum perspiciatis totam impedit facilis amet provident quas illo enim dolores. Architecto optio iste sapiente assumenda.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, assumenda aspernatur. Veniam porro cum reiciendis laborum, tempore quisquam illum, ipsa nam itaque voluptatibus pariatur voluptate perspiciatis non facere eius assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic unde modi earum id rerum? Illum perspiciatis totam impedit facilis amet provident quas illo enim dolores. Architecto optio iste sapiente assumenda.</p> 
+            </h4>
+        </article>
+        <a href="../blog.html">
+            <button>Back to Blog Page <span>&#128450;</span></button>
+        </a>
+    </section>
     </main>
-    <!-- END OF MAIN SECTION -->
+
     <!-- FOOTER -->
     <Footer>
-        <!-- Social Media icons -->
+        <!-- Footer Component - these icon elements are social media links used as an alternative contacting method. -->
         <div class="social-media-items">
             <a href="https://www.linkedin.com/in/chonsukp" target="_blank">
                 <i class="fa-brands fa-linkedin-in"></i>
@@ -63,13 +75,12 @@
                 <i class="fa-brands fa-instagram"></i>
             </a>
         </div>
-        <!-- Copyright -->
         <div class="copyright">
             <span>&#169 CYROS 2023 -</span>
             <span>CHONNY SUKPRANEE -</span>
             <span>FUELED BY ☕</span>
         </div>
     </Footer>
-    <!-- END OF FOOTER -->
+
 </body>
 </html>

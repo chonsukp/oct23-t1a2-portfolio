@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chonny's Portfolio</title>
     <!-- STYLESHEET -->
-    <link rel="stylesheet" href="../styles/Pages/contact.css"/>
-    <!-- Favicon -->
+    <link rel="stylesheet" href="../styles/pages/contact.css"/>
+    <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico"/>
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,53 +14,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- DEVICON TECH STACK ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
-
 <body>
+
     <!-- HEADER -->
     <header>
-        <!-- Logo -->
+        <!-- Logo Component - this is the return home link element. It includes a separate span id animation styling. -->
         <div class="home">
             <a class="home-logo" href="../index.html">
-                <span id="logo">.C</span>    
+                <span id="logo">.C    
                 <span id="logo-appear">YROS</span>
             </a>
         </div>
-        <!-- Navigation Bar -->
+        <!-- Navigation Bar Component - these elements are used to navigate through pages of the website. -->
         <nav id="nav-items">
-            <a href="./about.html">About</a>
-            <a href="./experience.html">Experience</a>
-            <a href="./blog.html">Blog</a>
-            <a href="./contact.html">Contact</a>
+            <a id="about" href="./about.html">About</a>
+            <a id="xp" href="./experience.html">Experience</a>
+            <a id="blog" href="./blog.html">Blog</a>
+            <a id="contact" href="./contact.html">Contact</a>
         </nav>
     </header>
     
     <!-- MAIN SECTION -->
     <main>
-        <!-- Hero Section -->
-        <section>
-            <h1 class="hero-text">
-                <span class="hero-text-static">
-                    Let's
-                </Span>
-                <span class="hero-text-type">
-                    Chat!
-                </span>
+        <!--  Main Section - these elements are used for typographic hierarchy styling such as heading, subheading, caption and body texts. -->
+        <section id="container-main-section">
+            <h1 class="heading">
+                <p class="heading-animation">CONTACT.</p>
             </h1>
-            <div class="brief-info">
-                <h2>
-                    Tell me about your projects.  
-                </h2>
-                <!-- <h3>
-                    emerging full-stack web developer
-                </h3> -->
+            <div class="body-text">
+                <h2>Tell me about your projects</h2>
+                <h3>let's create something exciting</h3>
                 <h4>
                     <p>Mobile: 0404040404</p>
                     <p>Email: hello@cyros.com.au</p>
-                    <p>Address: Brisbane QLD</p>
+                    <p>Address: Brisbane, QLD 4007</p>
                 </h4>
             </div>
         </section>
+        <!-- Form Component - these elements are used as form inputs for contacting. It also includes a submit button. -->
         <form>
             <div class="form-elements">
                 <label>Name:</label>
@@ -91,8 +85,8 @@
     
     <!-- FOOTER -->
     <Footer>
-        <!-- Social Media icons -->
-        <div class="social-media-items">
+         <!-- Footer Component - these icon elements are social media links used as an alternative contacting method. -->
+         <div class="social-media-items">
             <a href="https://www.linkedin.com/in/chonsukp" target="_blank">
                 <i class="fa-brands fa-linkedin-in"></i>
             </a>
@@ -103,7 +97,6 @@
                 <i class="fa-brands fa-instagram"></i>
             </a>
         </div>
-        <!-- Copyright -->
         <div class="copyright">
             <span>&#169 CYROS 2023 -</span>
             <span>CHONNY SUKPRANEE -</span>

@@ -2,11 +2,57 @@
 
 main {
     font-family: 'Poppins', sans-serif;
-    margin-left: 4vh;
-    margin-right: 4vh;
-    column-gap: 100px;
+    margin-left: 8vh;
+    margin-right: 8vh;
+    // margin-top: 36px;
     text-align: center;
 
+    // Heading element styling to have typing animation the the end of text.
+    .heading {
+        font-size: 58px;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0;
+        
+        .heading-animation {
+            border-right: 4px solid;
+            animation: typing 2s, cursor .4s step-end infinite alternate;
+        }
+
+        @keyframes cursor {
+            50% {border-color: transparent}
+        }
+    }
+
+    // Styling for heading, subheading, caption and body texts.
+    .body-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 18px;
+    
+        h2 {
+            font-size: 1.5em;
+            font-weight: 500;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        h3 {
+            font-style: italic;
+            font-size: .8em;
+            font-weight: 300;
+            margin-top: 0;
+        }
+        
+        h4 {
+            font-weight: 300;
+            margin-top: 0;
+        }
+    }
+
+    // Contact form styling including button to make it look cohesive with the overall design aesthetic. 
     form {
         display: flex;
         flex-direction: column;
@@ -41,85 +87,36 @@ main {
                 }
             }
         }
-
-        .btn-submit {
-            display: flex;
-            justify-content: center;
-        }
-
-        
     }
-    
-    .hero-text {
-        font-size: 4rem;
-        font-weight: 500;
+
+    .btn-submit {
+        text-align: center;
         margin-top: 16px;
-        margin-bottom: 16px;
-        
-        .hero-text-static {
-            margin-top: 0;
-        }
-        
-        .hero-text-type {
-            border-right: 4px solid;
-            width: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            animation: typing 2s steps(6), cursor .4s step-end infinite alternate;
-        }
-
-        @keyframes cursor {
-            50% {border-color: transparent}
-        }
-
-        @keyframes typing {
-            from {width:0}
-        }
-    }
-
-    .brief-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    
-        h2 {
-            font-size: 1.5rem;
-            margin-top: 0;
-            margin-bottom: 0;
-            font-weight: 500;
-        }
-        
-        h3 {
-            font-weight: 300;
-            font-size: .8em;
-            font-style: italic;
-            margin-top: 0;
-        }
-        
-        h4 {
-            font-weight: 300;
-            margin-top: 0;
-        }
     }
 }
 
-// Mobile first design
-
-@media screen and (min-width: $medium){
+// This media query is for large devices to make the input form have a flexible width as screen's width changes. It also inculdes font size styling. 
+@media screen and (min-width: $large){
     main {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
+        justify-content: space-between;
         padding-left: 100px;
         padding-right: 100px;
 
         form {
-            text-align: left;
             width: 40%;
+            padding-left: 4vw;
+        }
+
+        .heading {
+            font-size: 3rem;
+        }
+        .heading-animation {
+            margin-top: 0;
+        }
+
+        .body-text {
+            font-size: 1em;
         }
     }
 }
-
-
-

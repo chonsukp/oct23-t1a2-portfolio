@@ -1,1 +1,102 @@
 @import "../../style";
+
+main {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 8vh;
+    margin-right: 8vh;
+    margin-top: 36px;
+    text-align: center;
+
+    .heading {
+        font-size: 48px;
+    }
+
+    // Styling for heading, subheading, caption and body texts.
+    .body-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 18px;
+    
+        h2 {
+            font-size: 1.5em;
+            font-weight: 500;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        h3 {
+            font-style: italic;
+            font-size: .8em;
+            font-weight: 300;
+            margin-top: 0;
+        }
+        
+        h4 {
+            font-weight: 300;
+            margin-top: 0;
+        }
+    }
+
+     // Hero image styling.
+     .hero-image {
+        border-radius: 16px;
+        box-shadow: 8px 8px 12px 0 grey;
+    }
+
+    // This media query is for extra small devices to have everyting centered and gives the image top and bottom margins.
+    @media only screen and (max-width: $small){
+        text-align: center;
+
+        .heading {
+            font-size: 2.5rem;
+        }
+
+        .hero-image {
+            height: 60%;
+            width: 60%;
+            margin-top: 36px;
+            margin-bottom: 36px;
+        }
+    }
+    
+    // This media query is for small devices - resizing heading text and image. 
+    @media only screen and (min-width: $small){
+        text-align: center;
+        
+        .heading {
+            font-size: 3rem;
+        }
+
+        .hero-image {
+            height: 65%;
+            width: 65%;
+            margin-top: 36px;
+        }
+    }
+    // Media query for large devices to have text align centre and hero image on the left.
+    @media only screen and (min-width: $large){
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-left: 16vh;
+        margin-right: 16vh;
+        column-gap: 50px;
+
+        .body-text {
+            font-size: 1em;
+        }
+
+        .container-image {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 36px;
+
+            .hero-image {
+                height: 70%;
+                width: 70%;
+            } 
+        }
+    }
+}
+
