@@ -1,6 +1,6 @@
-@import "./styles/defaults//breakpoints";
 @import "./styles/components/header";
 @import "./styles/components/footer";
+@import "./styles/defaults//breakpoints";
 
 html {
     scroll-behavior: smooth;
@@ -62,3 +62,12 @@ button:hover {
     transition-duration: 0.4s;
 }
 
+i {
+    transition: ease-in-out;
+    transition-duration: 0.4s;
+}
+
+i:hover {
+        transform: translateY(-8px);
+        transition-duration: 0.4s;
+    }

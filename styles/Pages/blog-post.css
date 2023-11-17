@@ -119,17 +119,6 @@ footer .copyright {
     margin-right: auto;
   }
 }
-i {
-  transition: ease-in-out;
-  transition-duration: 0.4s;
-}
-
-i:hover {
-  opacity: 1;
-  transform: translateY(-8px);
-  transition-duration: 0.4s;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -184,5 +173,15 @@ button:hover {
   opacity: 1;
   cursor: pointer;
   transform: translateX(12px);
+  transition-duration: 0.4s;
+}
+
+i {
+  transition: ease-in-out;
+  transition-duration: 0.4s;
+}
+
+i:hover {
+  transform: translateY(-8px);
   transition-duration: 0.4s;
 }/*# sourceMappingURL=blog-post.css.map */

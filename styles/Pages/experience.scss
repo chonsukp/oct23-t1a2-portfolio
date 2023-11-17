@@ -2,112 +2,104 @@
 
 main {
     font-family: 'Poppins', sans-serif;
-    margin-left: 4vh;
-    margin-right: 4vh;
-    column-gap: 100px;
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 48px;
+    margin-left: 8vh;
+    margin-right: 8vh;
+    margin-top: 36px;
 
-    @media screen and (max-width: $medium){
-        text-align: center;
-    }
-    
-    .hero-text {
-        font-size: 4rem;
-        font-weight: 500;
+    // Heading element styling to have typing animation the the end of text.
+    .heading {
+        font-size: 58px;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0;
         
-        .hero-text-static {
-            margin-top: 0;
-        }
-        
-        .hero-text-type {
+        .heading-animation {
             border-right: 4px solid;
-            width: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            animation: typing 2s steps(6), cursor .4s step-end infinite alternate;
+            animation: typing 2s, cursor .4s step-end infinite alternate;
         }
 
         @keyframes cursor {
             50% {border-color: transparent}
         }
+    }
 
-        @keyframes typing {
-            from {width:0}
+    // Styling for heading, subheading, caption and body texts.
+    .body-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 18px;
+    
+        h2 {
+            font-size: 1.5em;
+            font-weight: 500;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        h3 {
+            font-style: italic;
+            font-size: .8em;
+            font-weight: 300;
+            margin-top: 0;
+        }
+        
+        h4 {
+            font-weight: 300;
+            margin-top: 0;
         }
     }
-}
 
-i {
-    font-size: 70px;
-}
+    i {
+        font-size: 70px;
+    }
 
-.hero-text {
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
+    // This media query is for extra small devices to have everyting centered. Also to change the heading and icon font sizes for legibility.
+    @media only screen and (max-width: $small){
+        display: inline;
+        text-align: center;
+        margin-bottom: 36px;
 
-.brief-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+        .heading {
+            font-size: 2.5rem;
+        }
 
-    h2 {
-        font-size: 1.5rem;
-        margin-top: 0;
-        margin-bottom: 0;
-        font-weight: 500;
+        i {
+            font-size: 2.5rem;
+        }
     }
     
-    h3 {
-        font-weight: 300;
-        font-size: .8em;
-        font-style: italic;
-        margin-top: 0;
+    // This media query is for small devices to have a similar styling to the extra small devices but with different heading font size.
+    @media only screen and (min-width: $small){
+        display: inline;
+        text-align: center;
+        margin-bottom: 36px;
+        
+        .heading {
+            font-size: 3rem;
+        }
     }
-    
-    h4 {
-        font-weight: 300;
-        margin-top: 0;
-    }
-}
 
-
-@media screen and (min-width: $medium){
-    main {
+    // Media query for large devices to have text align left and hero image on the right.
+    @media only screen and (min-width: $large){
         display: flex;
         justify-content: space-around;
         align-items: center;
         text-align: center;
-        padding-left: 100px;
-        padding-right: 100px;
+        margin-left: 16vh;
+        margin-right: 16vh;
+
+        i {
+            font-size: 3rem;
+        }
+
+        .body-text {
+            font-size: 1em;
+        }
+
+        #container-main-section {
+            width: 50%;
+        }
     }
-}
-
-.home-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.btn-cv {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 300;
-    margin-bottom: 48px;
-    background-color: transparent;
-    border-radius: 16px;
-    border-style: dashed;
-    opacity: .5;
-    transition: ease-in-out;
-    transition-duration: 0.4s;
-
-}
-
-.btn-cv:hover {
-    opacity: 1;
-    cursor: pointer;
-    transform: translateX(12px);
-    transition-duration: 0.4s;
 }
