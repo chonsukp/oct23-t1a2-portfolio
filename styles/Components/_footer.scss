@@ -1,5 +1,6 @@
 @import "../defaults//breakpoints";
 
+// Footer styling
 footer {
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -24,6 +25,7 @@ footer {
     }
 }
 
+// This media query is for medium devices to have different header style to the smaller devices. 
 @media screen and (min-width: $medium) {
     footer {
         .social-media-items {

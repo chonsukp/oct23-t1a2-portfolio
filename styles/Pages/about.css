@@ -158,20 +158,23 @@ a:hover {
 
 button {
   font-family: "Poppins", sans-serif;
-  font-size: 1.4rem;
+  font-size: 18px;
   font-weight: 300;
   margin-bottom: 48px;
-  background-color: white;
+  background-color: transparent;
+  border: 1px solid black;
   border-radius: 16px;
-  border-style: dashed;
   transition: ease-in-out;
   transition-duration: 0.4s;
+  box-shadow: 4px 4px 1px 0 black;
 }
 
 button:hover {
   cursor: pointer;
+  background-color: white;
   transform: translateX(12px);
   transition-duration: 0.4s;
+  box-shadow: none;
 }
 
 i {
