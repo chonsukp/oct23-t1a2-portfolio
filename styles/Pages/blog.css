@@ -164,13 +164,11 @@ button {
   background-color: transparent;
   border-radius: 16px;
   border-style: dashed;
-  opacity: 0.5;
   transition: ease-in-out;
   transition-duration: 0.4s;
 }
 
 button:hover {
-  opacity: 1;
   cursor: pointer;
   transform: translateX(12px);
   transition-duration: 0.4s;
@@ -291,6 +289,11 @@ main .container-blog .blog:hover {
   transition-duration: 0.4s;
   box-shadow: 4px 4px 16px grey;
   opacity: 0.8;
+}
+@media only screen and (max-width: 600px) {
+  main .heading {
+    font-size: 2rem;
+  }
 }
 @media only screen and (min-width: 600px) {
   main .heading {

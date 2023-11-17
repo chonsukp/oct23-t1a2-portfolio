@@ -164,13 +164,11 @@ button {
   background-color: transparent;
   border-radius: 16px;
   border-style: dashed;
-  opacity: 0.5;
   transition: ease-in-out;
   transition-duration: 0.4s;
 }
 
 button:hover {
-  opacity: 1;
   cursor: pointer;
   transform: translateX(12px);
   transition-duration: 0.4s;
@@ -265,6 +263,11 @@ main .btn-submit {
   margin-top: 16px;
 }
 
+@media only screen and (max-width: 600px) {
+  main .heading {
+    font-size: 2rem;
+  }
+}
 @media screen and (min-width: 992px) {
   main {
     display: flex;

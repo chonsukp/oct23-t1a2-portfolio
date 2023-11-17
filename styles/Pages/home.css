@@ -164,13 +164,11 @@ button {
   background-color: transparent;
   border-radius: 16px;
   border-style: dashed;
-  opacity: 0.5;
   transition: ease-in-out;
   transition-duration: 0.4s;
 }
 
 button:hover {
-  opacity: 1;
   cursor: pointer;
   transform: translateX(12px);
   transition-duration: 0.4s;
@@ -238,7 +236,7 @@ main .hero-image {
     text-align: center;
   }
   main .heading {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   main .hero-image {
     height: 50%;
