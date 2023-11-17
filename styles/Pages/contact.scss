@@ -105,6 +105,16 @@ main {
     }
 }
 
+@media only screen and (min-width: $small){
+    
+    main {
+
+        .heading {
+            font-size: 3rem;
+        }
+    }
+}
+
 // This media query is for large devices to make the input form have a flexible width as screen's width changes. It also inculdes font size styling. 
 @media screen and (min-width: $large){
     main {

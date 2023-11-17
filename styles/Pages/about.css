@@ -161,7 +161,7 @@ button {
   font-size: 1.4rem;
   font-weight: 300;
   margin-bottom: 48px;
-  background-color: transparent;
+  background-color: white;
   border-radius: 16px;
   border-style: dashed;
   transition: ease-in-out;
