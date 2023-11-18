@@ -1,3 +1,3 @@
 # Hello, World!
 
-<a href="https://chonsukp.netlify.app/">Deployed Site</a>
+<a href="https://chonsukp.netlify.app/" target="_blank">Deployed Site</a>

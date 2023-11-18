@@ -48,6 +48,16 @@ main {
             font-weight: 300;
             margin-top: 0;
         }
+
+        #ca-link {
+            text-decoration: none;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        #ca-link:hover {
+            color: green;
+        }
     }
 
     // Hero image styling.

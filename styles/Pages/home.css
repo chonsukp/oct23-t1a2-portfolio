@@ -230,6 +230,14 @@ main .body-text h4 {
   font-weight: 300;
   margin-top: 0;
 }
+main .body-text #ca-link {
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 500;
+}
+main .body-text #ca-link:hover {
+  color: green;
+}
 main .hero-image {
   border-radius: 32px;
   box-shadow: 8px 8px 12px 0 yellow;
