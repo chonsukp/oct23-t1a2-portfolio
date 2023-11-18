@@ -293,6 +293,10 @@ main .container-blog .blog:hover {
   box-shadow: 4px 4px 16px grey;
   opacity: 0.8;
 }
+main .container-blog #read-more {
+  text-decoration: underline;
+  font-size: 1em;
+}
 @media only screen and (max-width: 600px) {
   main .heading {
     font-size: 2rem;

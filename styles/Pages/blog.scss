@@ -119,6 +119,11 @@ main {
             box-shadow: 4px 4px 16px grey;
             opacity: .8;
         }
+
+        #read-more {
+            text-decoration: underline;
+            font-size: 1em;
+        }
     }
 
     @media only screen and (max-width: $small){
