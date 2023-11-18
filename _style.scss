@@ -43,6 +43,10 @@ a:hover {
     text-decoration: line-through;
 }
 
+a:visited {
+    text-decoration: none;
+}
+
 // Button styling
 button {
     font-family: 'Poppins', sans-serif;
@@ -55,6 +59,7 @@ button {
     transition: ease-in-out;
     transition-duration: 0.4s;
     box-shadow: 4px 4px 1px 0 black;
+    color: black;
     
 }
 
