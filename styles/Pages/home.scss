@@ -65,8 +65,7 @@ main {
         }
 
         .hero-image {
-            height: 50%;
-            width: 50%;
+            width: clamp(100px, 90%, 200px);
             border-radius: 100px;
             margin-bottom: 36px;
         }
@@ -81,8 +80,7 @@ main {
         }
 
         .hero-image {
-            height: 35%;
-            width: 35%;
+            width: clamp(100px, 90%, 200px);
         }
     }
     // Media query for large devices to display flex and have text on the left and hero image on the right with a column gap.
@@ -103,8 +101,7 @@ main {
             justify-content: center;
 
             .hero-image {
-                height: 80%;
-                width: 80%;
+                width: clamp(100px, 90%, 300px);
             }
         }
     }

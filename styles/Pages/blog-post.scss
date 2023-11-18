@@ -53,8 +53,7 @@ main {
         }
 
         .hero-image {
-            height: 60%;
-            width: 60%;
+            width: clamp(100px, 90%, 200px);
             margin-top: 36px;
             margin-bottom: 36px;
         }
@@ -69,8 +68,7 @@ main {
         }
 
         .hero-image {
-            height: 65%;
-            width: 65%;
+            width: clamp(100px, 90%, 300px);
             margin-top: 36px;
         }
     }
@@ -93,8 +91,7 @@ main {
             margin-bottom: 36px;
 
             .hero-image {
-                height: 70%;
-                width: 70%;
+                width: clamp(100px, 90%, 400px);
             } 
         }
     }

@@ -244,8 +244,7 @@ main .hero-image {
     font-size: 2rem;
   }
   main .hero-image {
-    height: 50%;
-    width: 50%;
+    width: clamp(100px, 90%, 200px);
     border-radius: 100px;
     margin-top: 36px;
   }
@@ -258,8 +257,7 @@ main .hero-image {
     font-size: 3rem;
   }
   main .hero-image {
-    height: 40%;
-    width: 40%;
+    width: clamp(100px, 90%, 200px);
     margin-top: 36px;
   }
 }
@@ -281,7 +279,6 @@ main .hero-image {
     justify-content: center;
   }
   main .container-image .hero-image {
-    height: 60%;
-    width: 60%;
+    width: clamp(100px, 90%, 300px);
   }
 }/*# sourceMappingURL=about.css.map */
