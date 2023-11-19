@@ -156,6 +156,10 @@ a:hover {
   text-decoration: line-through;
 }
 
+a:visited {
+  text-decoration: none;
+}
+
 button {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -167,6 +171,7 @@ button {
   transition: ease-in-out;
   transition-duration: 0.4s;
   box-shadow: 4px 4px 1px 0 black;
+  color: black;
 }
 
 button:hover {
